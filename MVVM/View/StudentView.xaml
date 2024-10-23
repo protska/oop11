@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="oop11.MVVM.View.StudentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:oop11.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="300"
+             Background="#D4E6FF">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Id}"
+                        FontFamily="Unbounded"
+                        FontSize="18"
+                        Foreground="#344966" />
+                <TextBlock Text=" "
+                        FontFamily="Unbounded"
+                        FontSize="18"
+                        Foreground="#344966" />
+                <TextBlock Text="{Binding FullName}"
+                        FontFamily="Unbounded"
+                        FontSize="18"
+                        Foreground="#344966"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Speciality}"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text=" "                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text="{Binding Course}"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text="-"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text="{Binding sGroup}"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text="/"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+                <TextBlock Text="{Binding Subgroup}"                           
+                       FontFamily="Unbounded"
+                       FontSize="16"
+                       Foreground="#344966"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
+

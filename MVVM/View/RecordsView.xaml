@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="oop11.MVVM.View.RecordsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:oop11.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="540"
+             Background="#F0F4EF">
+    <Grid>
+
+        <Label Content="Student ID: "
+               Margin="178,10,62,540"
+               FontSize="20"
+               FontFamily="Unbounded"/>
+        <TextBox 
+                x:Name="textBox_stId"
+               Margin="305,10,62,540"
+               FontSize="20"
+               FontFamily="Unbounded" 
+                PreviewTextInput="textBox_stId_PreviewTextInput"/>
+
+
+        <Button Height="100" 
+                x:Name="addRecord"
+                Margin="293,149,47,351"
+                Content="Add record"
+                Foreground="#344966"
+                FontFamily="Unbounded"
+                FontSize="18" Click="addRecord_Click">
+        </Button>
+
+
+        <TextBox Height="50"
+                 Width="70" Margin="403,86,67,464"
+                 x:Name="skipTextBox"
+                 FontSize="32"
+                 Foreground="#344966"
+                 FontFamily="Unbounded" 
+                 TextChanged="skipTextBox_TextChanged"/>
+        <TextBlock 
+            Text="Score:"
+            Padding="0 10 0 0"
+            Margin="178,86,317,464"/>
+        <TextBlock 
+            Text="Skip:"
+            Width="30"
+            Padding="0 10 0 0"
+            Margin="363,86,147,464"/>
+        <TextBox Height="50" Margin="235,86,235,464"
+                 Width="70"
+                 x:Name="scoreTextBox"
+                 FontSize="32"
+                 Foreground="#344966"
+                 FontFamily="Unbounded" 
+                 TextChanged="scoreTextBox_TextChanged"/>
+
+
+        <DataGrid Margin="0,254,0,56"
+                  x:Name="RecordsDataGrid">
+        </DataGrid>
+
+        <Button Height="50"
+                Width="300"
+                x:Name="deleteRecordButton"
+                Content="Delete record" 
+                Margin="120,544,120,6"
+                FontSize="24"
+                Foreground="#344966"
+                FontFamily="Unbounded" Click="deleteRecordButton_Click"
+                />
+    </Grid>
+</UserControl>
